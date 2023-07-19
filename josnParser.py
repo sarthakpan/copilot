@@ -157,3 +157,8 @@ def formatLabs():
 
 # print result from formatLabs()
 print(formatLabs())
+
+
+# generate test case for formatLabs function
+def test_formatLabs():
+    assert formatLabs() == ["Arterial Blood Gas","BMP","BNP","BUN","Cardiac Enzymes","CBC","Creatinine","Electrolyte Panel","Glucose","PT/INR","PTT","TSH"]

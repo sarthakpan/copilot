@@ -18,3 +18,40 @@
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+
+<!-- bootstrap 5 form with fields username, email, password, and confirmPassword, address, city, state, zip -->
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" formControlName="username">
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" formControlName="email">
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" formControlName="password">
+    </div>
+    <div class="mb-3">
+        <label for="confirmPassword" class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" id="confirmPassword" formControlName="confirmPassword">
+    </div>
+    <div class="mb-3">
+        <label for="address" class="form-label">Address</label>
+        <input type="text" class="form-control" id="address" formControlName="address">
+    </div>
+    <div class="mb-3">
+        <label for="city" class="form-label">City</label>
+        <input type="text" class="form-control" id="city" formControlName="city">
+    </div>
+    <div class="mb-3">
+        <label for="state" class="form-label">State</label>
+        <input type="text" class="form-control" id="state" formControlName="state">
+    </div>
+    <div class="mb-3">
+        <label for="zip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="zip" formControlName="zip">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

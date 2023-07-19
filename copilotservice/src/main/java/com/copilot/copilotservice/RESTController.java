@@ -42,14 +42,14 @@ public class RESTController {
         //return a string of the id
         return "ID: " + id;
     }
-    @PostMapping("/login")
+    @PostMapping("/login2")
     public ResponseEntity<String> login2(String username, String password) {
         //return a string of the username and password
         return new ResponseEntity<>("result successful result",
                 HttpStatus.OK);
     }
-    @PostMapping("/register")
-    public ResponseEntity<String> register2(String username, String password, String confirmPassword, String address, String city, String country, String zip) {
+    @PostMapping("/register4")
+    public ResponseEntity<String> register4(String username, String password, String confirmPassword, String address, String city, String country, String zip) {
         //return a string of the username and password
         return new ResponseEntity<>("result successful result",
                 HttpStatus.OK);
